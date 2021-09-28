@@ -16,5 +16,17 @@
             </summary>
             <returns>Car</returns>
         </member>
+        <member name="M:ClassLibraryTicketSystem.MC.Price">
+            <summary>
+            Method which returns the price 240
+            </summary>
+            <returns>125</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.VehicleType">
+            <summary>
+            Method which retusn the vehicle type "Car"
+            </summary>
+            <returns>MC</returns>
+        </member>
     </members>
 </doc>
