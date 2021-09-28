@@ -6,33 +6,18 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
-    public class Car
+    public class Car : Vehicle
     {
-        #region Instance Fields
-        private string _licensePlate;
-        private DateTime _date;
-        #endregion
-
-        #region Properties
-        public string LicensePlate
+        public Car(string licensePlate) : base(licensePlate)
         {
-            get { return _licensePlate; }
-            set { _licensePlate = value; }
+            LicensePlate = licensePlate;
         }
-
-        public DateTime Date
-        {
-            get { return _date; }
-            set { _date = value; }
-        }
-        #endregion
-
         /// <summary>
         /// Method which returns the price 240
         /// </summary>
         /// <returns>240</returns>
         #region Methods
-        public double Price()
+        public override double Price()
         {
             return 240;
         }
@@ -41,7 +26,7 @@ namespace ClassLibraryTicketSystem
         /// Method which retusn the vehicle type "Car"
         /// </summary>
         /// <returns>Car</returns>
-        public string VehicleType()
+        public override string VehicleType()
         {
             return "Car";
         }

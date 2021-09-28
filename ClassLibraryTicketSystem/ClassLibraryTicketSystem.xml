@@ -24,7 +24,7 @@
         </member>
         <member name="M:ClassLibraryTicketSystem.MC.VehicleType">
             <summary>
-            Method which retusn the vehicle type "Car"
+            Method which returns the vehicle type "Car"
             </summary>
             <returns>MC</returns>
         </member>
