@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryTicketSystem</name>
+    </assembly>
+    <members>
+        <member name="M:ClassLibraryTicketSystem.Car.Price">
+            <summary>
+            Method which returns the price 240
+            </summary>
+            <returns>240</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.VehicleType">
+            <summary>
+            Method which retusn the vehicle type "Car"
+            </summary>
+            <returns>Car</returns>
+        </member>
+    </members>
+</doc>
