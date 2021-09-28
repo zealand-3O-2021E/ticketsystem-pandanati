@@ -6,12 +6,20 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
+    /// <summary>
+    /// MC class which contains overriding methods: Price(double) and Vehicle Type(string). Inherits from Vehicle
+    /// </summary>
     public class MC : Vehicle
     {
-
-        public MC(string licensePlate) : base(licensePlate)
+        /// <summary>
+        /// MC constructor with license plate and datetime, inherits from Vehicle
+        /// </summary>
+        /// <param name="licensePlate"></param>
+        /// <param name="date"></param>
+        public MC(string licensePlate, DateTime date) : base(licensePlate, date)
         {
             LicensePlate = licensePlate;
+            Date = date;
         }
 
         #region Methods

@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
+    /// <summary>
+    /// Car class which contains overriding methods Price(double) and Vehicle Type(string). Inherits from Vehicle
+    /// </summary>
     public class Car : Vehicle
     {
-        public Car(string licensePlate) : base(licensePlate)
+        public Car(string licensePlate, DateTime date) : base(licensePlate, date)
         {
             LicensePlate = licensePlate;
+            Date = date;
         }
         /// <summary>
         /// Method which returns the price 240

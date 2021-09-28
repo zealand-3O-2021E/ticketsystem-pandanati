@@ -2,6 +2,9 @@
 
 namespace ClassLibraryTicketSystem
 {
+    /// <summary>
+    /// Vehicle class
+    /// </summary>
     public class Vehicle
     {
         #region Instance Fields
@@ -9,7 +12,7 @@ namespace ClassLibraryTicketSystem
         private DateTime _date;
         #endregion
 
-        public Vehicle(string licensePlate)
+        public Vehicle(string licensePlate, DateTime date)
         {
             _licensePlate = licensePlate;
 
@@ -19,7 +22,11 @@ namespace ClassLibraryTicketSystem
             }
         }
 
+
         #region Properties
+        /// <summary>
+        /// LicensePlate Property
+        /// </summary>
         public string LicensePlate
         {
             get { return _licensePlate; }
@@ -37,6 +44,9 @@ namespace ClassLibraryTicketSystem
             }
         }
 
+        /// <summary>
+        /// Datetime Date property
+        /// </summary>
         public DateTime Date
         {
             get { return _date; }
@@ -44,11 +54,20 @@ namespace ClassLibraryTicketSystem
         }
         #endregion
 
+
+        /// <summary>
+        /// Virtual method VehicleType
+        /// </summary>
+        /// <returns>Car</returns>
         public virtual string VehicleType()
         {
             return "Car";
         }
 
+        /// <summary>
+        /// Virtual Method Price
+        /// </summary>
+        /// <returns>240</returns>
         public virtual double Price()
         {
             return 240;
