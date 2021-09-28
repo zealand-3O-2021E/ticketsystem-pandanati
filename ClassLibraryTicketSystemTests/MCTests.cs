@@ -16,7 +16,7 @@ namespace ClassLibraryTicketSystem.Tests
         public void MCTest()
         {
             // Arrange
-            MC mc = new MC("12345678");
+            MC mc = new MC("12345678", DateTime.Now);
 
             Assert.Fail();
         }
@@ -25,7 +25,7 @@ namespace ClassLibraryTicketSystem.Tests
         public void PriceTest()
         {
             // Arrange
-            MC mc = new MC("123ABC4");
+            MC mc = new MC("123ABC4", DateTime.Now);
 
             // Act
             double actualPrice = mc.Price();
@@ -38,7 +38,7 @@ namespace ClassLibraryTicketSystem.Tests
         public void VehicleTypeTest()
         {
             // Arrange
-            MC mc1 = new MC("123ABC5");
+            MC mc1 = new MC("123ABC5", DateTime.Now);
 
             // Act
             string actualVehicleType = mc1.VehicleType();
