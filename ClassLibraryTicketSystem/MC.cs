@@ -26,16 +26,21 @@ namespace ClassLibraryTicketSystem
         /// <summary>
         /// Method which returns the price 240
         /// </summary>
-        /// <returns>125</returns>
+        /// <returns>125 unless brozz is used. Returns type Double</returns>
         public override double Price()
         {
+            if (BroBizzUsed)
+            {
+                // 5% discound if brobizz is used
+                return 125 * 0.95;
+            }
             return 125;
         }
 
         /// <summary>
         /// Method which returns the vehicle type "Car"
         /// </summary>
-        /// <returns>MC</returns>
+        /// <returns>Returns type string, "MC"</returns>
         public override string VehicleType()
         {
             return "MC";

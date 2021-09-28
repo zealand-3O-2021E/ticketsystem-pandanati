@@ -36,6 +36,20 @@ namespace ClassLibraryTicketSystem.Tests
         }
 
         [TestMethod()]
+        public void PriceTestBroBizzUsed()
+        {
+            // Arrange
+            Car car1 = new Car("1234A67", DateTime.Now);
+
+            // Act
+            car1.BroBizzUsed = true;
+            double actualPrice = car1.Price();
+
+            // Assert
+            Assert.AreEqual(228, actualPrice);
+        }
+
+        [TestMethod()]
         public void VehicleTypeTest()
         {
             // Arrange

@@ -23,6 +23,12 @@ namespace ClassLibraryTicketSystem
         #region Methods
         public override double Price()
         {
+            if (BroBizzUsed)
+            {
+                //5% discound if Brobizz is used
+                return 240 * 0.95;
+            }
+
             return 240;
         }
         

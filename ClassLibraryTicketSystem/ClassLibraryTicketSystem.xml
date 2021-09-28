@@ -37,18 +37,26 @@
             <summary>
             Method which returns the price 240
             </summary>
-            <returns>125</returns>
+            <returns>125 unless brozz is used. Returns type Double</returns>
         </member>
         <member name="M:ClassLibraryTicketSystem.MC.VehicleType">
             <summary>
             Method which returns the vehicle type "Car"
             </summary>
-            <returns>MC</returns>
+            <returns>Returns type string, "MC"</returns>
         </member>
         <member name="T:ClassLibraryTicketSystem.Vehicle">
             <summary>
             Vehicle class
             </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.#ctor(System.String,System.DateTime)">
+            <summary>
+            base class vehicle constructor. Throws exception if licenseplate is longer than 7 characters
+            Takes two parameters; a license plate and a date for registration date
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="date"></param>
         </member>
         <member name="P:ClassLibraryTicketSystem.Vehicle.LicensePlate">
             <summary>
@@ -58,6 +66,11 @@
         <member name="P:ClassLibraryTicketSystem.Vehicle.Date">
             <summary>
             Datetime Date property
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.BroBizzUsed">
+            <summary>
+            Brobizz bool property
             </summary>
         </member>
         <member name="M:ClassLibraryTicketSystem.Vehicle.VehicleType">

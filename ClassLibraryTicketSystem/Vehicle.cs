@@ -5,14 +5,22 @@ namespace ClassLibraryTicketSystem
     /// <summary>
     /// Vehicle class
     /// </summary>
-    public class Vehicle
+    public abstract class Vehicle
     {
         #region Instance Fields
         private string _licensePlate;
         private DateTime _date;
+        private bool _broBizzUsed = false;
         #endregion
 
-        public Vehicle(string licensePlate, DateTime date)
+
+        /// <summary>
+        /// base class vehicle constructor. Throws exception if licenseplate is longer than 7 characters
+        /// Takes two parameters; a license plate and a date for registration date
+        /// </summary>
+        /// <param name="licensePlate"></param>
+        /// <param name="date"></param>
+        protected Vehicle(string licensePlate, DateTime date)
         {
             _licensePlate = licensePlate;
 
@@ -20,6 +28,8 @@ namespace ClassLibraryTicketSystem
             {
                 throw new Exception("License plate cannot have more than 7 characters");
             }
+            _date = date;
+            _broBizzUsed = false;
         }
 
 
@@ -52,6 +62,11 @@ namespace ClassLibraryTicketSystem
             get { return _date; }
             set { _date = value; }
         }
+
+        /// <summary>
+        /// Brobizz bool property
+        /// </summary>
+        public bool BroBizzUsed{ get; set;}
         #endregion
 
 
@@ -59,19 +74,13 @@ namespace ClassLibraryTicketSystem
         /// Virtual method VehicleType
         /// </summary>
         /// <returns>Car</returns>
-        public virtual string VehicleType()
-        {
-            return "Car";
-        }
+        public abstract string VehicleType();
 
         /// <summary>
         /// Virtual Method Price
         /// </summary>
         /// <returns>240</returns>
-        public virtual double Price()
-        {
-            return 240;
-        }
+        public abstract double Price();
 
 
     }

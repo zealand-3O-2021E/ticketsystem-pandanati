@@ -35,6 +35,20 @@ namespace ClassLibraryTicketSystem.Tests
         }
 
         [TestMethod()]
+        public void PriceTestBroBizzUsed()
+        {
+            // Arrange
+            MC mc = new MC("123ABC4", DateTime.Now);
+
+            // Act
+            mc.BroBizzUsed = true;
+            double actualPrice = mc.Price();
+
+            // Assert
+            Assert.AreEqual(118.75, actualPrice);
+        }
+
+        [TestMethod()]
         public void VehicleTypeTest()
         {
             // Arrange
