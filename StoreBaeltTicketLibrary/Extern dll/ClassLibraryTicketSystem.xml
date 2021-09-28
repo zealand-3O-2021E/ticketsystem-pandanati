@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibraryTicketSystem</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibraryTicketSystem.Car">
+            <summary>
+            Car class which contains overriding methods Price(double) and Vehicle Type(string). Inherits from Vehicle
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.Price">
+            <summary>
+            Method which returns the price 240
+            </summary>
+            <returns>240</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.VehicleType">
+            <summary>
+            Method which retusn the vehicle type "Car"
+            </summary>
+            <returns>Car</returns>
+        </member>
+        <member name="T:ClassLibraryTicketSystem.MC">
+            <summary>
+            MC class which contains overriding methods: Price(double) and Vehicle Type(string). Inherits from Vehicle
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.#ctor(System.String,System.DateTime)">
+            <summary>
+            MC constructor with license plate and datetime, inherits from Vehicle
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="date"></param>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.Price">
+            <summary>
+            Method which returns the price 240
+            </summary>
+            <returns>125 unless brozz is used. Returns type Double</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.VehicleType">
+            <summary>
+            Method which returns the vehicle type "Car"
+            </summary>
+            <returns>Returns type string, "MC"</returns>
+        </member>
+        <member name="T:ClassLibraryTicketSystem.Vehicle">
+            <summary>
+            Vehicle class
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.#ctor(System.String,System.DateTime)">
+            <summary>
+            base class vehicle constructor. Throws exception if licenseplate is longer than 7 characters
+            Takes two parameters; a license plate and a date for registration date
+            </summary>
+            <param name="licensePlate"></param>
+            <param name="date"></param>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.LicensePlate">
+            <summary>
+            LicensePlate Property
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.Date">
+            <summary>
+            Datetime Date property
+            </summary>
+        </member>
+        <member name="P:ClassLibraryTicketSystem.Vehicle.BroBizzUsed">
+            <summary>
+            Brobizz bool property
+            </summary>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.VehicleType">
+            <summary>
+            Virtual method VehicleType
+            </summary>
+            <returns>Car</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Vehicle.Price">
+            <summary>
+            Virtual Method Price
+            </summary>
+            <returns>240</returns>
+        </member>
+    </members>
+</doc>
