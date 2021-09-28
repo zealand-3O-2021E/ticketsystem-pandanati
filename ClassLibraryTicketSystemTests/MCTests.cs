@@ -18,6 +18,7 @@ namespace ClassLibraryTicketSystem.Tests
             // Arrange
             MC mc = new MC("12345678", DateTime.Now);
 
+            // Assert
             Assert.Fail();
         }
 
