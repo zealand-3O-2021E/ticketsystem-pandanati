@@ -11,6 +11,8 @@ namespace OresundBron.Tests
     [TestClass()]
     public class OresundsMCTests
     {
+        // Expects an exception to come up when using more than 8 characters
+        // For the licenseplate
         [ExpectedException(typeof(Exception))]
         [TestMethod()]
         public void OresundsMCMoreThan7CharactersTest()
@@ -22,6 +24,7 @@ namespace OresundBron.Tests
             Assert.Fail();
         }
 
+        // Price test with Brobizz used
         [TestMethod()]
         public void PriceTestWithBroBizzUsed()
         {
@@ -36,7 +39,7 @@ namespace OresundBron.Tests
             Assert.AreEqual(73, actualPrice);
         }
 
-
+        // Price test without Brobizz used
         [TestMethod()]
         public void PriceTestWithoutBroBizzUsed()
         {
@@ -50,6 +53,7 @@ namespace OresundBron.Tests
             Assert.AreEqual(210, actualPrice);
         }
 
+        // Tests that the vehicle type is "Oresund MC", is case sensitive
         [TestMethod()]
         public void VehicleTypeTest()
         {
